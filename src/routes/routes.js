@@ -3,9 +3,9 @@ import { getPeople, createPerson, updatePerson, deletePerson } from "../controll
 
 const router = Router();
 
-router.get("/", getPeople);
-router.post("/", createPerson);
-router.put("/:id", updatePerson);
-router.delete("/:id", deletePerson);
+router.get("/api/users", getPeople);
+router.post("/api/user", createPerson);
+router.put("/api/user:id", updatePerson);
+router.delete("/api/user:id", deletePerson);
 
 export default router;
