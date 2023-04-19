@@ -14,7 +14,7 @@ export const Persona = sequelize.define("tbl_personas", {
         type: DataTypes.STRING(50),
     },
     phone: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING(12),
     },
     email: {
         type: DataTypes.STRING(50),
